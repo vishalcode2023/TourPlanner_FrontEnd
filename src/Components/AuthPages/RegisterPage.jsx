@@ -16,7 +16,7 @@ const RegisterPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = { username, email, password };
-    console.log("Form submitted:", formData);
+   
 
     const response = await instance.post("/auth/register", formData, {
       withCredentials: true,
