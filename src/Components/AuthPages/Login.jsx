@@ -14,7 +14,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = { email, password };
-    console.log("Login submitted:", formData);
+
 
     try {
       const response = await instance.post("/auth/login", formData, {
